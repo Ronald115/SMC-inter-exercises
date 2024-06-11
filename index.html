@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversion and Text Analysis Tools</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section id="decimalToBinary">
+        <h2>Decimal to Binary Converter</h2>
+        <form id="converterForm">
+          <label for="decimalInput">Enter a decimal number:</label>
+          <input type="number" id="decimalInput" required />
+          <button type="submit">Convert</button>
+        </form>
+        <p>Result: <span id="binaryOutput"></span></p>
+      </section>
+
+      <section id="palindromeFinder">
+        <h2>Find the Longest Palindrome</h2>
+        <form id="palindromeForm">
+          <label for="textInput">Enter a sentence:</label>
+          <input type="text" id="textInput" required />
+          <button type="submit">Find Palindrome</button>
+        </form>
+        <p>Result: <span id="palindromeOutput"></span></p>
+      </section>
+
+      <section id="textJustify">
+        <h2>Justify Text</h2>
+        <form id="justifyForm">
+          <label for="justifyInput">Enter a text:</label>
+          <textarea id="justifyInput" required></textarea>
+          <label for="maxCharsInput">Maximum characters per line:</label>
+          <input type="number" id="maxCharsInput" required />
+          <button type="submit">Justify</button>
+        </form>
+        <p>Result:</p>
+        <pre id="justifiedOutput"></pre>
+      </section>
+    </div>
+    <script src="toBin.js"></script>
+    <script src="palindrome.js"></script>
+    <script src="linesAndSpaces.js"></script>
+  </body>
+</html>
