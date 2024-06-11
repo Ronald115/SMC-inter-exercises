@@ -74,3 +74,7 @@ p {
     white-space: pre-wrap; 
     text-align: left;
 }
+
+pre {
+    text-align: left;
+}
